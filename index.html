@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bài 1: Tính tiền lương nhân viên</h1>
+      <div>
+        <label for="tienLuong" class="form-label">Tiền lương</label>
+        <input
+          class="form-control w-25"
+          id="tienLuong"
+          placeholder="Tiền lương"
+        />
+      </div>
+      <div>
+        <label for="soNgay" class="form-label">Số ngày làm</label>
+        <input
+          class="form-control w-25"
+          id="soNgay"
+          placeholder="Số ngày làm"
+        />
+      </div>
+      <button type="button" onclick="tinhLuong()" class="btn btn-success mt-2">
+        Tính Lương
+      </button>
+      <div
+        id="luong"
+        class="form-control w-25 p-3 mt-2 bg-warning-subtle text-success"
+      ></div>
+      <hr />
+
+      <h1>Bài 2: Tính giá trị trung bình</h1>
+      <div>
+        <label for="soThuNhat" class="form-label">Số thứ nhất</label>
+        <input
+          type="number"
+          class="form-control w-25"
+          id="soThuNhat"
+          placeholder="Nhập số thứ nhất"
+        />
+      </div>
+      <div>
+        <label for="soThuHai" class="form-label">Số thứ hai</label>
+        <input
+          type="number"
+          class="form-control w-25"
+          id="soThuHai"
+          placeholder="Nhập số thứ hai"
+        />
+      </div>
+      <div>
+        <label for="soThuBa" class="form-label">Số thứ ba</label>
+        <input
+          type="number"
+          class="form-control w-25"
+          id="soThuBa"
+          placeholder="Nhập số thứ ba"
+        />
+      </div>
+      <div>
+        <label for="soThuTu" class="form-label">Số thứ tư</label>
+        <input
+          type="number"
+          class="form-control w-25"
+          id="soThuTu"
+          placeholder="Nhập số thứ tư"
+        />
+      </div>
+      <div>
+        <label for="soThuNam" class="form-label">Số thứ năm</label>
+        <input
+          type="number"
+          class="form-control w-25"
+          id="soThuNam"
+          placeholder="Nhập số thứ năm"
+        />
+      </div>
+
+      <button type="button" onclick="tinhGTTB()" class="btn btn-success mt-2">
+        Tính giá trị trung bình
+      </button>
+      <div id="TB" class="form-control w-25 p-3 mt-2 bg-warning-subtle"></div>
+      <hr />
+      
+      <h1>Bài 3: Quy đổi tiền</h1>
+      <div>
+        <label for="soUSD" class="form-label">Số USD</label>
+        <input
+          type="number"
+          class="form-control w-25"
+          id="soUSD"
+          placeholder="Nhập số USD"
+        />
+      </div>
+      <button type="button" onclick="QuyDoi()" class="btn btn-success mt-2">
+        Quy đổi tiền
+      </button>
+      <div
+        id="quyDoi"
+        class="form-control w-25 p-3 mt-2 bg-warning-subtle"
+      ></div>
+      <hr>
+      <h1>Bài 4:Tính diện tích,chu vi hình chữ nhật</h1>
+      <div>
+        <label for="chieuDai" class="form-label">Chiều Dài</label>
+        <input
+          type="number"
+          class="form-control w-25"
+          id="chieuDai"
+          placeholder="Chiều Dài"
+        />
+      </div>
+      <div>
+        <label for="chieuRong" class="form-label">Chiều Rộng</label>
+        <input
+          type="number"
+          class="form-control w-25"
+          id="chieuRong"
+          placeholder="Chiều Rộng"
+        />
+      </div>
+      <button type="button" onclick="DienTich()" class="btn btn-success mt-2">
+        Diện Tích
+      </button>
+      <button type="button" onclick="ChuVi()" class="btn btn-success mt-2">
+        Chu Vi
+      </button>
+      <div
+        id="ketQua"
+        class="form-control w-25 p-3 mt-2 bg-warning-subtle"
+      ></div>
+      <hr>
+      <h1>Bài 5: Tính tổng 2 ký số</h1>
+      <div>
+        <label for="so" class="form-label">Số</label>
+        <input
+          type="number"
+          class="form-control w-25"
+          id="so"
+          placeholder="Số 2 ký tự"
+        />
+      </div>
+      <button type="button" onclick="Tong()" class="btn btn-success mt-2">
+        Tổng
+      </button>
+      <div
+        id="tong"
+        class="form-control w-25 p-3 mt-2 bg-warning-subtle"
+      ></div>
+
+    </div>
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
